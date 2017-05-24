@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Szymon Trzepla">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Local Weather</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">
+    <link type="text/css" rel="stylesheet " href="css/style.css ">
+</head>
+
+<body>
+
+    <div class="container ">
+        <div class="bg_container"></div>
+        <div class="content">
+            <div class="head">
+                <h1 id="city" class="city"></h1>
+                <h2 id="time" class="time"></h2>
+            </div>
+            <div class="weather">
+                <h2 class="temp" id="celsiusT"></h2>
+                <div class="icon"><i id="icon" class="wi "></i></div>
+            </div>
+
+            <ul class="weather_list">
+                <li ><span class="wi wi-strong-wind"></span> <span id="windSpeed" class="gray_l">Wiatr</span></li>
+                <li ><span class="wi wi-barometer"></span> <span id="press" class="gray_l">Ciśnienie</span></li>
+                <li ><span class="wi wi-humidity"></span> <span id="humidity" class="gray_l">Wilgotność</span></li>
+            </ul>
+
+            <h4>Zanieczyszczenie powietrza</h4>
+
+            <ul class="pollution_list">
+                <li id="airQ">
+                    <p>Jakość powietrza: </p>
+                    </br>
+                    <span id="airText"></span>
+                </li>
+                <li class="tooltip">
+                    <span class="grey_l">PM2.5</span>
+                    <span id="pm25"></span>
+                    <span class="grey_l">μg/m<sup>3</sup></span>
+                    <span class="tooltiptext">Zanieczyszczenia powietrza o średnicy 2.5 mikrometra</span>
+                </li>
+                <li class="tooltip">
+                    <span class="grey_l">PM10</span>
+                    <span id="pm10"></span>
+                    <span class="grey_l">μg/m<sup>3</sup></span>
+                    <span class="tooltiptext">Zanieczyszczenia powietrza o średnicy 10 mikrometra</span>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+    <script type="text/json" src="js/icons.json"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

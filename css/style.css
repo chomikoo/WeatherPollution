@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    /*    border: 1px solid black;*/
+}
+
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg_container {
+    background: url("https://images.pexels.com/photos/29724/pexels-photo-29724.jpg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.bg_container1 {
+    background: url("https://images.pexels.com/photos/29724/pexels-photo-29724.jpg?w=940&h=650&auto=compress&cs=tinysrgb");
+}
+
+.bg_container2 {
+    background: url("https://images.pexels.com/photos/206926/pexels-photo-206926.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+}
+
+.bg_container3 {
+    background: url("https://images.pexels.com/photos/404966/pexels-photo-404966.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+}
+
+.bg_container4 {
+    background: url("http://img06.deviantart.net/f330/i/2015/068/6/0/broken_clouds_1__by_terraluna5-d8l479n.jpg");
+}
+
+.bg_container5 {
+    background: url("https://images.pexels.com/photos/404984/pexels-photo-404984.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+}
+
+.bg_container6 {
+    background: url("https://images.pexels.com/photos/110874/pexels-photo-110874.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+}
+
+.bg_container7 {
+    background: url("https://images.pexels.com/photos/29095/pexels-photo-29095.jpg?w=940&h=650&auto=compress&cs=tinysrgb");
+}
+
+.bg_container8 {
+    background: url("https://images.pexels.com/photos/4022/cold-snow-forest-trees.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+}
+
+.bg_container9 {
+    background: url("https://images.pexels.com/photos/104907/pexels-photo-104907.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+}
+
+.container {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.content {
+  
+    background: #4CA1AF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #C4E0E5, #4CA1AF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #C4E0E5, #4CA1AF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    min-width: 600px;
+    min-height: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.head {
+    display: flex;
+    /*    text-align: left;*/
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #868282;
+}
+
+.city {
+    flex: 1;
+    font-size: 2em;
+    /*    text-align: left;*/
+    /*    padding: 10px;*/
+}
+
+.time {
+    flex: 1;
+}
+
+.weather {
+    font-size: 3em;
+    padding-top: 25px;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp {
+    flex: 1;
+    font-size: 2em;
+    display: block;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.icon {
+    flex: 1;
+    text-align: center;
+    font-size: 130px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    font-size: 2em;
+    flex: 1;
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 20px 0;
+}
+.weather_list li span {
+    margin-right: 5px;
+}
+.grey_l {
+    color: #868282;
+    font-size: 15px;
+}
+
+.pollution_list li:first-child {
+    border-radius: 5px;
+}
+
+.pollution_list p {
+    margin: 0;
+}
+
+
+/*TOOLTIP */
+
+.tooltip {
+    position: relative;
+}
+
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-size: 12px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 500;
+}
+
+
+/* Tooltip arrow */
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
