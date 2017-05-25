@@ -10,6 +10,7 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    text-shadow: 2px 3px 10px #2e2e2e;
 }
 
 .bg_container {
@@ -66,7 +67,6 @@ body {
 }
 
 .content {
-  
     background: #4CA1AF;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #C4E0E5, #4CA1AF);
@@ -98,8 +98,6 @@ body {
 .city {
     flex: 1;
     font-size: 2em;
-    /*    text-align: left;*/
-    /*    padding: 10px;*/
 }
 
 .time {
