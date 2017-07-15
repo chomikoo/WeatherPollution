@@ -322,7 +322,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var apiKey = "98310c44c00378e11f092a57b0514137"
             var airlyKey = "647a7cfea9aa4b158c59f8e00df50dc7";
 
-            var urlW = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&APPID=' + apiKey; //Weather API
+            var urlW = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&APPID=' + apiKey; //Weather API
             var urlP = 'https://airapi.airly.eu/v1/mapPoint/measurements?latitude=' + lat + '&longitude=' + lon + '&apikey=' + airlyKey; // air POllution
 
             console.log("Airly: " + urlP);
